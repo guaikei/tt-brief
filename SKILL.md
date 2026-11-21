@@ -6,6 +6,11 @@ name: tt-brief
 description: "TikTok数据日报数据源（只读）：关键词搜视频、博主作品、视频评论，输出 JSON，不登录不发布。触发词：TikTok、tiktok、抖音国际版、TikTok搜索、TikTok评论、TikTok博主。用户要查 TikTok 视频、评论、爆款选题、竞品监控、KOL 筛选或评论舆情时使用；抖音、小红书、快手、B站、微博、公众号不要用本技能。"
 license: MIT
 version: 1.1.3
+display_name: "TikTok数据日报｜每日汇总·作品表现·互动趋势·周报成稿"
+display_name_en: "TikTok Brief"
+description_zh: "TikTok数据日报数据源（只读，无需登录 TikTok 账号，不发布不点赞不评论，无封号风险）：一条命令取回 TikTok 公开数据，全部结构化 JSON 输出，可直接进 Excel/BI 或交给 AI 汇总成日报、周报。\n\n三类能力：①关键词搜视频，相关度或最多点赞排序，时间窗 1–180 天与数量筛选；②博主作品列表，支持主页链接、@用户名或 sec_uid，最新或最热排序，带发布时间与互动数据；③视频评论抓取，按视频链接或作品 ID 取评论，用于情绪与需求归因。\n\n典型产出：每日数据汇总、作品表现复盘、涨粉与互动趋势、发文节奏、选题库、竞品对比、爆款归因、舆情周报。\n\n规模：按量单次最多 10000 条；包月搜索与作品 30 条、评论 40 条，超限返回 PLAN_LIMIT。仅需 Node.js 16.14+ 与 GUAIKEI_API_TOKEN，零第三方依赖。"
+description_en: "Read-only TikTok daily-brief data source: no TikTok login, no posting, liking or commenting, so no ban risk. One command returns public TikTok data as structured JSON for Excel, BI or AI-written daily and weekly reports.\n\nCapabilities: 1) Keyword video search with relevance or most-liked sorting, time windows from 1 to 180 days, and a limit up to 10,000. 2) Creator post listing by profile URL, @username or sec_uid, sorted newest or hottest, with publish time and interaction counts. 3) Video comment scraping by video URL or post id for sentiment and demand attribution.\n\nOutputs: daily digests, post performance reviews, follower and engagement trends, posting cadence, topic libraries, competitor tables, viral attribution, sentiment reports.\n\nScale: pay-as-you-go up to 10,000 items per call; monthly plans cap search and posts at 30, comments at 40, then PLAN_LIMIT. Needs Node.js 16.14+ and GUAIKEI_API_TOKEN, no third-party deps."
+author: "新郑市怪奇信息技术工作室"
 metadata:
   openclaw:
     emoji: "🎵"
